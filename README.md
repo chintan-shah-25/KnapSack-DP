@@ -17,4 +17,5 @@ knapsack contains items 1 and 3 (total: $46).
 
 Reference: http://www.cs.berkeley.edu/~vazirani/algorithms/chap6.pdf page 181
 
+Please go through the above link. Explanation is excellant.
 I have implemented both the versions in the java file. I have also given the table in the comment section for better understanding of how dynamic programming works.
