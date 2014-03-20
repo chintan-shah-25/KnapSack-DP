@@ -92,7 +92,21 @@ public static void main(String[] args)
           System.out.print("\t"+result[i]);
       return result[maxweight];
     }
-    
+  
+  /*
+ result(0) = 0
+result(1) = 0
+result(2) = max{result(2-2) + 9} = max{result(0) + 9}=max{0 + 9} = 9
+result(3) = max{result(3-2) + 9, result(3-3) + 14} = max{9, 14} = 14
+result(4) = max{result(4-2) + 9, result(4-3) + 14, result(4-4) + 16} = max{18, 14, 16} = 18
+result(5) = max{result(5-2) + 9, result(5-3) + 14, result(5-4) + 16} = max{23, 23, 16} = 23
+result(6) = max{result(6-2) + 9, result(6-3) + 14, result(6-4) + 16, result(6-6) + 30} = max{27, 28, 25, 30} = 30
+result(7) = max{result(7-2) + 9, result(7-3) + 14, result(7-4) + 16, result(7-6) + 30} = max{32, 32, 30, 30} = 32
+result(8) = max{result(8-2) + 9, result(8-3) + 14, result(8-4) + 16, result(8-6) + 30} = max{39, 37, 34, 39} = 39
+result(9) = max{result(9-2) + 9, result(9-3) + 14, result(9-4) + 16, result(9-6) + 30} = max{41, 44, 39, 44} = 44
+result(10) = max{result(10-2) + 9, result(10-3) + 14, result(10-4) + 16, result(10-6) + 30} = max{48, 46, 46, 48} = 48
+  
+  */  
   // 0        0        9        9        18        23        30        32        39        44        48  weight table
     
     
