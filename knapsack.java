@@ -93,6 +93,6 @@ public static void main(String[] args)
       return result[maxweight];
     }
     
-   0        0        9        9        18        23        30        32        39        44        48 // weight table
+  // 0        0        9        9        18        23        30        32        39        44        48  weight table
     
     
