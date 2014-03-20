@@ -76,14 +76,11 @@ public static void main(String[] args)
              for(int j=0;j<v.length;j++)
              {
                  if (w[j]>i)
-                 {
-                     result[i]=result[i-1];
                      continue;
-
-                 }
                  else
                      max=result[i-w[j]]+ v[j];
-                 if(max>result[i])
+                     
+                 if(max>=result[i])
                      result[i]=max;
 
            }
@@ -107,6 +104,6 @@ result(9) = max{result(9-2) + 9, result(9-3) + 14, result(9-4) + 16, result(9-6)
 result(10) = max{result(10-2) + 9, result(10-3) + 14, result(10-4) + 16, result(10-6) + 30} = max{48, 46, 46, 48} = 48
   
   */  
-  // 0        0        9        9        18        23        30        32        39        44        48  weight table
+  // 0        0        9        14       18        23        30        32        39        44        48  weight table
     
     
